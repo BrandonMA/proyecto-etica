@@ -1,1 +1,3 @@
-# MERN
+# Proyecto etica
+
+Observatorio
