@@ -76,7 +76,7 @@ const Auth: React.FunctionComponent<Props> = (props) => {
     });
 
     if (props.token === null || props.refreshToken === null) {
-        return <Redirect to='/signin'/>
+        return <div/>
     } else {
         if (props.user === null) {
             return <div/> // Return loading
