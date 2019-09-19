@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 export enum DocumentType {
-    text = 'text',
+    document = 'document',
     video = 'video',
     blog = 'blog'
 }

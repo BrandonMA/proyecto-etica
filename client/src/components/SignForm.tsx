@@ -32,7 +32,8 @@ export default class SignForm extends React.Component<Props, State> {
                 {this.props.children}
                 <LoadingButton
                     className={buttonsClassName}
-                    variant='primary'
+                    variant='light'
+                    spinnerVariant='dark'
                     disabled={this.props.showSpinner}
                     loading={this.props.showSpinner}
                     title={this.props.loadingButtonTitle}/>

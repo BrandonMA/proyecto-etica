@@ -1,9 +1,23 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import ReactMarkdown from 'react-markdown';
 
-const Blog: React.FunctionComponent<{}> = () => {
+interface Props {
+    id: string,
+    content: string
+}
+
+// https://word2md.com
+
+const input = `Primer post`;
+
+const Home: React.FunctionComponent<{}> = () => {
     return(
-        <h1>Blog</h1>
+        <Container>
+            <h1>Titulo del post</h1>
+            <p>{input}</p>
+        </Container>
     );
 }
 
-export default Blog;
+export default Home;

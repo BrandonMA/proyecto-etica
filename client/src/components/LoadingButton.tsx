@@ -7,6 +7,7 @@ interface Props {
     variant: "primary" | "secondary" | "success" | "warning" | "danger" | "info" | "light" | "dark",
     disabled: boolean,
     loading: Boolean,
+    spinnerVariant: "primary" | "secondary" | "success" | "warning" | "danger" | "info" | "light" | "dark"
     title: string
 }
 
@@ -19,7 +20,7 @@ const LoadingButton: React.FunctionComponent<Props> = (props) => {
             disabled ={ props.disabled} >
             {
                 props.loading ? 
-                <Spinner animation = 'grow' variant = { props.variant }/> : props.title
+                <Spinner animation = 'grow' variant = { props.spinnerVariant }/> : props.title
             }
         </Button>
     );

@@ -1,0 +1,41 @@
+.auth {
+    display: flex;
+}
+
+body {
+    color: white!important;
+    font-family: 'Manjari', sans-serif!important;
+    background-color: #131720!important;
+}
+
+.modal-content {
+    background-color: #131720!important;
+    
+}
+
+span {
+    color: white!important;
+}
+
+#Navbar {
+    background-color: transparent!important;
+}
+
+#App {
+    background-color: #131720!important;
+}
+
+.card {
+    background-color: #1f242f!important;
+}
+
+.card:hover {
+    background-color: transparent!important;
+    border-width: -5px;
+	border-style: solid;
+	border-color: #ed145b;
+}
+
+.card-title {
+    color: #fff200;
+}

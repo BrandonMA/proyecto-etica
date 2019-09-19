@@ -86,7 +86,7 @@ class SignUp extends React.Component<Props, State> {
                             </Form.Group>
                             <Form.Group>
                                 <Form.Label>Admin Key</Form.Label>
-                                <Form.Control type='text' name='key'></Form.Control>
+                                <Form.Control type='text' name='key' required></Form.Control>
                             </Form.Group>
                         </SignForm>
                     </Col>

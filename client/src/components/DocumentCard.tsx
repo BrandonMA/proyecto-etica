@@ -13,12 +13,11 @@ interface Props {
 const DocumentCard: React.FunctionComponent<Props> = (props) => {
     return(
         <Col lg={3}>
-            <Card>
-                <Card.Header>{props.type}</Card.Header>
+            <Card className='my-3'>
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>
-                    <LinkContainer to={'/' + props.type + '/' + props.id }>
-                        <Button variant="primary">Go somewhere</Button>
+                    <LinkContainer className='mx-auto' to={'/' + props.type + '/' + props.id }>
+                        <Button variant="light">Ver documento</Button>
                     </LinkContainer>
                 </Card.Body>
             </Card>

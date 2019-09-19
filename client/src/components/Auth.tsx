@@ -82,7 +82,7 @@ const Auth: React.FunctionComponent<Props> = (props) => {
             return <div/> // Return loading
         } else {
             return (
-                <div>
+                <div className='auth'>
                     {props.children}
                 </div>
             );

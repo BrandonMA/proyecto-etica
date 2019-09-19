@@ -3,12 +3,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
-import Home from './Home';
+import Documents from './Documents';
 import ErrorToast from './ErrorToast';
-import Auth from './Auth';
 import Navbar from './Navbar';
-import Blog from './Blog';
-import VideoLibrary from './VideoLibrary';
+import Blogs from './Blogs';
+import VideoLibrary from './Videos';
 import Document from './Document';
 import Video from './Video';
 
@@ -20,15 +19,14 @@ class App extends React.Component {
                 <Router>
                     <Route path={`/signin`} component={SignIn} />
                     <Route path={`/signup`} component={SignUp} />
-                    <Auth>
-                        <Navbar />
-                        <Route path="/home" component={Home} exact={true} />
-                        <Route path={'/documento/:id'} component={Document} />
-                        <Route path="/video-library" component={VideoLibrary} exact={true} />
-                        <Route path="/blog" component={Blog} exact={true} />
-                        <Route path={'/video/:id'} component={Video} />
-                        <Route exact path="/" render={() => <Redirect to="/home" />} />
-                    </Auth>
+                    <Navbar />
+                    <Route path="/documents" component={Documents} exact={true} />
+                    <Route path={'/document/:id'} component={Document} />
+                    <Route path="/videos" component={VideoLibrary} exact={true} />
+                    <Route path="/blogs" component={Blogs} exact={true} />
+                    <Route path="/blog/:id" component={Document} />
+                    <Route path={'/video/:id'} component={Video} />
+                    <Route exact path="/" render={() => <Redirect to="/documents" />} />
                 </Router>
             </div>
         );
