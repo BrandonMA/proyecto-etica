@@ -6,7 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 const Navbar: React.FunctionComponent<{}> = () => {
     return(
         <BootstrapNavbar id='Navbar' bg="dark" expand="lg" variant="dark">
-            <BootstrapNavbar.Brand>Nombre de la página</BootstrapNavbar.Brand>
+            <BootstrapNavbar.Brand>Observatorio</BootstrapNavbar.Brand>
             <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
             <BootstrapNavbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
